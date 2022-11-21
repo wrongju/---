@@ -1,0 +1,141 @@
+/*NAVIGATION*/
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.nav {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 215px;
+}
+.nav-logo {
+  background-image: url("../images/logo.svg");
+  width: 42px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 42px;
+}
+.nav-block {
+  display: flex;
+}
+.nav-block__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 21px;
+  gap: 53px;
+}
+.nav-block__list .list-item {
+  letter-spacing: 0.5px;
+}
+.nav-block__list .circle {
+  background-color: rgb(159, 158, 158);
+  width: 8px;
+  height: 8px;
+  border-radius: 20px;
+}
+
+/*HEADER*/
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 20px;
+}
+.header .header-left {
+  position: relative;
+}
+.header .header-left__text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 22px;
+}
+.header .header-left__text .title-black {
+  background-color: black;
+  color: white;
+  padding: 4px 15px;
+  border-radius: 21px;
+  font-weight: 700;
+  font-size: 19px;
+}
+.header .header-left__text .title {
+  letter-spacing: 5px;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.536);
+}
+.header .header-left__powerful {
+  font-size: 55.5px;
+  width: 650px;
+  margin-top: 15px;
+}
+.header .header-left__powerful .powerful-title {
+  line-height: 5rem;
+}
+.header .header-left__paragraph {
+  font-size: 23.5px;
+  font-family: "Barlow", sans-serif;
+  width: 360px;
+  margin-top: 55px;
+  color: rgba(0, 0, 0, 0.641);
+  line-height: 2.1rem;
+}
+.header .header-left__button {
+  display: flex;
+  align-items: center;
+  margin-top: 90px;
+  gap: 25px;
+}
+.header .header-left__button .button-block {
+  background-color: hsl(0deg, 100%, 68%);
+  border: none;
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+  padding: 16px 42px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.header .header-left__button .button-text {
+  font-size: 19px;
+  letter-spacing: 5px;
+}
+.header .header-right {
+  background-image: url("../images/illustration-devices.svg");
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 600px;
+  background-size: cover;
+  position: absolute;
+  right: -352px;
+  top: 275px;
+}
